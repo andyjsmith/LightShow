@@ -1,0 +1,97 @@
+.orange {
+	background-color: orange;
+	color: white;
+}
+
+.orange:hover, .orange:active, .orange:focus {
+	background-color: rgb(203, 123, 0);
+	color: white;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.yellow:hover, .yellow:active, .yellow:focus {
+	background-color: rgb(255, 226, 40);
+}
+
+.purple {
+	background-color: purple;
+	color: white;
+}
+
+.purple:hover, .purple:active, .purple:focus {
+	background-color: rgb(87, 0, 134);
+	color: white;
+}
+
+.dark-blue {
+	background-color: midnightblue;
+	color: white;
+}
+
+.dark-blue:hover, .dark-blue:active, .dark-blue:focus {
+	background-color: darkblue;
+	color: white;
+}
+
+.sp-picker-container {
+	width: 300px;
+}
+
+.sp-replacer {
+	background: none;
+	border-radius: .25rem;
+	height: 37px;
+}
+
+.sp-dd:before {
+	content: "Choose Color ";
+	font-size: 12pt;
+}
+
+.sp-dd {
+	padding-top: 5px;
+}
+
+.sp-preview {
+	height: 100%;
+}
+
+.color-table {
+        width: 100%;
+        table-layout:fixed;
+}
+
+.color-table table {
+        table-layout: fixed;
+        border-spacing: 0;
+        border-collapse: separate;
+        border: 0;
+}
+
+.table .btn {
+        width: 100%;
+        height: 50px;
+        font-size: 0pt;
+        border: 0;
+        border-radius: 0;
+}
+
+.color-table table td {
+        padding: 0;
+        margin: 0;
+}
+
+
+@media (max-width: 480px)  {
+	.btn {
+		width: 100%;
+	}	
+
+	.sp-replacer {
+		margin-top: 10px;
+		width: 100%;
+	}
+}

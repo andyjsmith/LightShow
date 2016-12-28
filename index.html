@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>LightShow</title>
+
+	<link rel="icon" href="light.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/spectrum.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+	<div class="container">
+		<h1>LightShow</h1>
+		<hr />
+		<button class="btn btn-danger" onclick="fadeToColor(0, 0, 0);">Turn Off</button>
+		<input type="text" class="color-picker" />
+		<hr />
+		Brightness <input type="range" min="0" max="100" value="100" id="brightness-slider">
+		<hr />
+		<div class="color-table">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td><button class="btn btn-danger" onclick="fadeToColor(255, 0, 0);">Red</button></td>
+						<td><button class="btn btn-success" onclick="fadeToColor(0, 255, 0);">Green</button></td>
+						<td><button class="btn btn-primary" onclick="fadeToColor(0, 0, 255);">Blue</button></td>
+						<td><button class="btn btn-secondary" onclick="fadeToColor(255, 255, 255);">White</button></td>
+					</tr>
+					<tr>
+						<td><button class="btn btn-secondary orange" onclick="fadeToColor(255, 165, 0);">Orange</button></td>
+						<td><button class="btn btn-secondary yellow" onclick="fadeToColor(255, 255, 0);">Yellow</button></td>
+						<td><button class="btn btn-secondary purple" onclick="fadeToColor(75, 0, 130);">Purple</button></td>
+						<td><button class="btn btn-secondary dark-blue" onclick="fadeToColor(25, 25, 115);">Dark Blue</button></td>
+					</tr>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr />
+		<button class="btn btn-secondary" onclick="fadeColors(1);">Fade Fast</button>
+		<button class="btn btn-secondary" onclick="fadeColors(3);">Fade Normal</button>
+		<button class="btn btn-secondary" onclick="fadeColors(100);">Fade Slow</button>
+	</div>
+	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="js/spectrum.js" charset="utf-8"></script>
+	<script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
