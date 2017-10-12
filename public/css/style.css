@@ -84,6 +84,10 @@
         margin: 0;
 }
 
+#brightness-slider {
+	margin-left: 10px;
+}
+
 
 @media (max-width: 480px)  {
 	.btn {
